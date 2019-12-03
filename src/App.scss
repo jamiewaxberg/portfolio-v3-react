@@ -1,0 +1,7 @@
+@import "./variables.scss";
+@import "./components/header/Header.scss";
+
+.App {
+	font-family: 'Roboto', sans-serif;
+	color: $base-font-color;
+}
