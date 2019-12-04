@@ -44,7 +44,7 @@ $white:                 		#fff;
 $off-white:						#fafafa;
 
 $base-font-color: $dark-gray;
-$base-color: $green;
+$primary-color: $green;
 $accent-color: $blue;
 
 
@@ -88,6 +88,7 @@ $form-font-family: 'Open Sans', sans-serif;
 // Media queries
 $small-screen: 480px;
 $medium-screen: 768px;
+$max-width: 1200px;
 
 @mixin small-screen {
 	@media (min-width: $small-screen) { @content; }
@@ -95,5 +96,9 @@ $medium-screen: 768px;
 
 @mixin medium-screen {
 	@media (min-width: $medium-screen) { @content; }
+} 
+
+@mixin max-width {
+	@media (min-width: $max-width) { @content; }
 } 
 

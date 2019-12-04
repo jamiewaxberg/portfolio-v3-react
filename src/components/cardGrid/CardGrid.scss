@@ -1,0 +1,9 @@
+.cardGridWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: -2em;
+  overflow: hidden;
+  max-width: $max-width;
+  margin: 0 auto;
+}

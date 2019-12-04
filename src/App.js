@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Header from './components/header/Header.js'
-import Card from './components/card/Card.js'
+import CardGrid from './components/cardGrid/CardGrid.js'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       
       <Header />
       {/*cards*/}
-      <Card />
+      <CardGrid />
 
       {/*extracurriculars*/}
 

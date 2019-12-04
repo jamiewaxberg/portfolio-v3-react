@@ -1,8 +1,14 @@
 @import "./variables.scss";
 @import "./components/header/Header.scss";
 @import "./components/card/Card.scss";
+@import "./components/cardGrid/CardGrid.scss";
+
+body {
+	margin: 0;
+}
 
 .App {
 	font-family: 'Roboto', sans-serif;
 	color: $base-font-color;
+	position: relative;
 }
