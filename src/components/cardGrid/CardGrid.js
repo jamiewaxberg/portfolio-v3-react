@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Card from '../card/Card.js'
 
 const links = [
 	{id: 'work', text: 'work'}, 
@@ -7,15 +8,12 @@ const links = [
 	{id: 'contact', text: 'get in touch'}
 ];
 
-function Header() {
+function CardGrid() {
 	return (
 		<Fragment>
-			<h1>Jamie Gold</h1>
-			<nav>
-				{links.map((link) => <a className="navLink" key={link.id} href={`#${link.id}`}>{link.text}</a>)}
-			</nav>
+			<Card />
 		</Fragment>
 	);
 }
 
-export default Header;
+export default CardGrid;
