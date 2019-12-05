@@ -1,14 +1,19 @@
 @import "./variables.scss";
+@import "./typography.scss";
 @import "./components/header/Header.scss";
 @import "./components/card/Card.scss";
 @import "./components/cardGrid/CardGrid.scss";
+@import "./components/seeMoreModal/SeeMoreModal.scss";
+@import "./components/extracurriculars/Extracurriculars.scss";
 
 body {
 	margin: 0;
 }
 
 .App {
-	font-family: 'Roboto', sans-serif;
-	color: $base-font-color;
-	position: relative;
+	max-width: $max-width;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 1.75em;
+    position: relative;
 }

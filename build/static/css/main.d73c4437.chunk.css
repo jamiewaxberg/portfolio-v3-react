@@ -1,2 +1,0 @@
-h1{font-size:2.4em;justify-content:center}h1,nav{display:flex}nav{margin:1.5em 0;align-items:center;flex-direction:column}@media (min-width:768px){nav{flex-direction:row;justify-content:center}}a{width:auto;height:100%;padding:.3em 1em;-webkit-transition:all .15s linear;transition:all .15s linear;border-bottom:none;color:#7b7570;border-radius:3px;font-size:.8em;letter-spacing:1.5px;text-transform:uppercase}a:hover{background:#44aedb;color:#fff}modal{display:none}.App{font-family:Roboto,sans-serif;color:#444}
-/*# sourceMappingURL=main.d73c4437.chunk.css.map */
