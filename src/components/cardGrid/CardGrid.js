@@ -30,7 +30,7 @@ const cards = [
 
 function CardGrid() {
 	return (
-		<div className="contentSection">
+		<div className="contentSection withArrow">
 			<h4>Work</h4>
 			<div className="cardGridWrapper ">
 				{cards.map((card) => <Card card={card} key={card.title} />)}

@@ -2,8 +2,8 @@
 	background: $gray-lightest;
 }
 
-h5 {
-	margin-top: 0.75em;
+.sectionHeader {
+	margin: 0.75em 0 0 0;
 }
 
 .extracurricularSection {
@@ -11,8 +11,38 @@ h5 {
 	max-width: $max-width;
 	margin: 0 auto;
 
-	div {
+	.extracurricular {
 		@include cardStyles;
 		padding-top: 0.5em;
-	}	
+		
+		p {
+			margin-bottom: 0.25em;
+
+			&.name {
+				font-size: 1.1em;
+			}
+
+			&.title,
+			&.date {
+				font-weight: 100;
+				font-size: 0.9em;
+				color: $gray;
+			}
+		}
+
+		span, a {
+			text-transform: none;
+			font-size: 0.9em;
+		}
+
+		a {
+			padding-left: 0.2em;
+			white-space: nowrap;
+
+			span {
+				font-size: 1.1em;
+				padding-left: 0.2em;
+			}
+		}
+	}
 } 

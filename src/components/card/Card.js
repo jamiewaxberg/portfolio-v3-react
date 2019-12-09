@@ -45,6 +45,9 @@ function Card(props) {
 	      	<div className="card-copy">
 	        	<p>{card.copy}</p>
 	      	</div>
+	      	<ul className="techs">
+		      	{props.card.techs.map((tech) => <li>{tech}</li>)}
+	      	</ul>
 	      	{RenderCardLink()}
 	        {RenderDisclaimer()}
     	</div>

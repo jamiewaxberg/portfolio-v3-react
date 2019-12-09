@@ -21,13 +21,15 @@
 
 .card-copy p {
 	font-size: $base-font-size;
+	font-weight: 100;
+	margin-bottom: 1em;
 }
 
 ul.techs {
-	display: inline-block;
-	margin-bottom: 1em;
-	padding: 0;
+	display: block;
+	padding: 0 0 0.5em 0;
 	list-style: none;
+	margin: 0;
 
 	li {
 		display: inline-block;
@@ -35,7 +37,7 @@ ul.techs {
 		border: 1px solid $primary-color;
 		border-radius: 3px;
 		padding: .2em .3em;
-		margin: 0 .1em .3em 0;
+		margin: 0 .2em .4em 0;
 		font-size: 0.9em;
 	}
 }
@@ -50,4 +52,5 @@ span, .cardLink {
 	text-style: italic;
 	color: $light-gray;
 	margin: 1em 0;
+	font-weight: 100;
 }

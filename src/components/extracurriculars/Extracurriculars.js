@@ -39,11 +39,11 @@ function Extracurriculars() {
 			<div className="contentSection">
 				<h4 id="scroll-link-2">Additional Experience</h4>
 				<div>
-					<h5>Hackathons</h5>
+					<h5 className="sectionHeader">Hackathons</h5>
 					<div className="extracurricularSection">
 						{extracurriculars.hackathons.map((hackathon) => {
 							return (
-								<div key={hackathon.name}>
+								<div className="extracurricular" key={hackathon.name}>
 									<p className="name">{hackathon.name}</p>
 									<p className="title">{hackathon.title}</p>
 									<p className="date">{hackathon.date}</p>
@@ -53,11 +53,11 @@ function Extracurriculars() {
 							)
 						})}
 					</div>
-					<h5>Conferences</h5>
+					<h5 className="sectionHeader">Conferences</h5>
 					<div className="extracurricularSection">
 						{extracurriculars.conferences.map((conference) => {
 							return (
-								<div key={conference.name}>
+								<div className="extracurricular" key={conference.name}>
 									<p className="name">{conference.name}</p>
 									<p className="title">{conference.title}</p>
 									<p className="date">{conference.date}</p>

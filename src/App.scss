@@ -15,10 +15,29 @@ body {
 .App {
     width: 100%;
     position: relative;
+    padding-top: 2em;
 }
 
 .contentSection {
 	max-width: $max-width;
 	margin: 0 auto;
-	padding: 3em 0;
+	padding: 3em 2em;
+	position: relative;
+
+	@include max-width {
+		padding: 3em 0;
+	}
+
+	&.withArrow:after {
+		content: '';
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 20px solid #fff;
+		position: absolute;
+	    bottom: -20px;
+	    left: 50%;
+	    margin-left: -26px;
+	}
 }
