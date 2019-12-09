@@ -102,3 +102,10 @@ $max-width: 1200px;
 	@media (min-width: $max-width) { @content; }
 } 
 
+// Card mixins
+@mixin cardStyles {
+	flex-basis: 15em;
+	flex-grow: 1;
+	margin-right: 2em;
+}
+

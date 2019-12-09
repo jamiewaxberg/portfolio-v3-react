@@ -5,15 +5,20 @@
 @import "./components/cardGrid/CardGrid.scss";
 @import "./components/seeMoreModal/SeeMoreModal.scss";
 @import "./components/extracurriculars/Extracurriculars.scss";
+@import "./components/about/About.scss";
+
 
 body {
 	margin: 0;
 }
 
 .App {
-	max-width: $max-width;
-    margin: 0 auto;
     width: 100%;
-    padding-top: 1.75em;
     position: relative;
+}
+
+.contentSection {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 3em 0;
 }

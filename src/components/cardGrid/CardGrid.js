@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Card from '../card/Card.js'
 
 const cards = [
@@ -30,12 +30,12 @@ const cards = [
 
 function CardGrid() {
 	return (
-		<Fragment>
+		<div className="contentSection">
 			<h4>Work</h4>
-			<div className="cardGridWrapper">
+			<div className="cardGridWrapper ">
 				{cards.map((card) => <Card card={card} key={card.title} />)}
 			</div>
-		</Fragment>
+		</div>
 	);
 }
 

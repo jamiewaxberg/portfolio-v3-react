@@ -1,0 +1,25 @@
+.socialButtons {
+	display: flex;
+	padding-top: 1em;
+
+	a {
+		flex-basis: 2em;
+		padding: 1.5em;
+		transition: all .15s linear;
+		border-radius: $base-border-radius;
+
+		svg {
+			height: 2em;
+			width: 2em;
+			fill: $base-font-color;
+		}
+
+		&:hover {
+			background: $base-accent-color;
+
+			svg {
+				fill: $white;
+			}
+		}
+	}
+}

@@ -1,8 +1,6 @@
 .card {
-	flex-basis: 15em;
-	flex-grow: 1;
-	margin: 0 2em 0 0;
-	padding-top: 2em;
+	@include cardStyles;
+	padding-top: 1em;
 
 	h5 {
 		margin-bottom: 0.25em;
