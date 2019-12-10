@@ -8,19 +8,11 @@ import About from './components/about/About.js'
 function App() {
   return (
     <div className="App">
-      
       <Header />
-      {/*cards*/}
       <CardGrid />
-
-      {/*extracurriculars*/}
       <Extracurriculars />
-
-
-      {/*about*/}
       <About />
     </div>
-    
   );
 }
 

@@ -39,9 +39,9 @@ function renderSocialButtons(button) {
 function About() {
 	return (
 		<div className="contentSection">
-			<h5>About Me</h5>
+			<h4 className="aboutHeader">About Me</h4>
 			<p>{about.blurb}</p>
-			<h5>Get In Touch</h5>
+			<h4 className="aboutHeader">Get In Touch</h4>
 			<div className="socialButtons">
 				{about.socialButtons.map((button) => renderSocialButtons(button))}
 			</div>

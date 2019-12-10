@@ -1,3 +1,7 @@
+.withArrow:after {
+	@include triangle($white);
+}
+
 .cardGridWrapper {
   display: flex;
   flex-wrap: wrap;

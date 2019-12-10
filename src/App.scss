@@ -7,7 +7,6 @@
 @import "./components/extracurriculars/Extracurriculars.scss";
 @import "./components/about/About.scss";
 
-
 body {
 	margin: 0;
 }
@@ -25,19 +24,10 @@ body {
 	position: relative;
 
 	@include max-width {
-		padding: 3em 0;
+		padding: 5em 0;
 	}
 
-	&.withArrow:after {
-		content: '';
-		width: 0; 
-		height: 0; 
-		border-left: 20px solid transparent;
-		border-right: 20px solid transparent;
-		border-top: 20px solid #fff;
-		position: absolute;
-	    bottom: -20px;
-	    left: 50%;
-	    margin-left: -26px;
+	&.withWhiteArrow:after {
+		@include triangle($white);
 	}
 }
