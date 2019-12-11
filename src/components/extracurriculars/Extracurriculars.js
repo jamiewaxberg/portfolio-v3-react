@@ -35,7 +35,7 @@ const extracurriculars = {
 
 function Extracurriculars() {
 	return (
-		<div className="graySection">
+		<div id="adtl-exp" className="graySection">
 			<div className="contentSection">
 				<h4 id="scroll-link-2">Additional Experience</h4>
 				<div>

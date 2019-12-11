@@ -30,7 +30,7 @@ const cards = [
 
 function CardGrid() {
 	return (
-		<div className="withArrow">
+		<div id="work" className="withArrow">
 			<div className="contentSection">
 				<h4>Work</h4>
 				<div className="cardGridWrapper ">
