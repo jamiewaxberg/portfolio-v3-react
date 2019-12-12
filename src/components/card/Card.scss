@@ -16,6 +16,10 @@
 		width: 100%;
 		border: 1px solid $gray-lighter;
 		border-radius: $base-border-radius;
+		object-position: bottom;
+	    object-fit: cover;
+	    max-width: 266px;
+	    max-height: 166px;
 	}
 }
 
@@ -23,6 +27,15 @@
 	font-size: $base-font-size;
 	font-weight: 100;
 	margin-bottom: 1em;
+
+	a {
+		color: $base-font-color;
+
+		&:hover {
+			color: $base-font-color;
+			text-decoration: underline;
+		}
+	}
 }
 
 ul.techs {

@@ -4,6 +4,8 @@ import SeeMoreModal from '../seeMoreModal/SeeMoreModal.js';
 function Card(props) {
 	const card = props.card;
 
+	console.log(card)
+
 	function RenderCardLink() {
 		const hasModalImages = card.modalImages;
 		const hasGithubUrl = card.githubUrl;
