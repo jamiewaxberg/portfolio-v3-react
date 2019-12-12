@@ -27,6 +27,7 @@ nav {
     font-size: .8em;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
+	cursor: pointer;
 
     &:hover {
     	background: $base-accent-color;

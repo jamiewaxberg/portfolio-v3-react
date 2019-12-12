@@ -39,9 +39,7 @@ const defaultOptions = {
 };
 
 function scroll(id) {
-	console.log(document.querySelector(`#${id}`))
 	animateScrollTo(document.querySelector(`#${id}`), defaultOptions)
-	  
 }
 
 function Header() {
@@ -49,7 +47,7 @@ function Header() {
 		<Fragment>
 			<h1>Jamie Gold</h1>
 			<nav>
-				{links.map((link) => <a className="navLink" key={link.id} onClick={() => scroll(link.id)}>{link.text}</a>)}
+				{links.map((link) => <span className="navLink" key={link.id} onClick={() => scroll(link.id)}>{link.text}</span>)}
 			</nav>
 		</Fragment>
 	);
