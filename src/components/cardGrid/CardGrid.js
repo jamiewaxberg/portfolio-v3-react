@@ -4,12 +4,36 @@ import Card from '../card/Card.js'
 function CardGrid() {
 	const cards = [
 		{
+			title: 'Select Plan Flow',
+			imgPath: '../../images/select-plan.png',
+			copy: 'This feature gives users the ability to edit cards in their Watchlist, which contains in-progress episodes of Bluprint class playlists. This feature was part of a larger epic of improvements made to modules around the site that directly tie to the video watching experience. We also tracked clicks and deletions made by users. This data informs the business on which playlists our users chose to not continue watching, which leads to more informed descision making and content creation.',
+			techs: ['React', 'Redux', 'Sass', 'Recompose'],
+			modalImages: ['../../images/select-plan.png', '../../images/select-plan-modal/select-plan-paypal.png', '../../images/select-plan-modal/select-plan-paypal2.png', '../../images/select-plan-modal/select-plan-confirm.png'],
+			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
+		},
+		{
+			title: 'Combined Checkout Offers',
+			imgPath: '../../images/combined-checkout.png',
+			copy: 'This feature gives users the ability to edit cards in their Watchlist, which contains in-progress episodes of Bluprint class playlists. This feature was part of a larger epic of improvements made to modules around the site that directly tie to the video watching experience. We also tracked clicks and deletions made by users. This data informs the business on which playlists our users chose to not continue watching, which leads to more informed descision making and content creation.',
+			techs: ['React', 'Redux', 'Javascript', 'Node'],
+			modalImages: ['../../images/combined-checkout-modal/combined-checkout1.png', '../../images/combined-checkout-modal/combined-checkout2.png', '../../images/combined-checkout.png'],
+			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
+		},
+		{
+			title: 'Syndicated Navigation',
+			imgPath: '../../images/syndicated-nav.png',
+			copy: 'After introducing a CMS-driven front end solution in our technology ecosystem, we were faced with a problem – how to have two separate front ends with a single navigation bar. The solution we came up with was to scrape the navigation from the CMS stack and pull it in via AJAX to our React stack. The main benefit of this approach was that it allowed the navigation bar to be fully configureable via the CMS, and those changes carried over to the React stack. The integration allowed for stateful communication between the two apps.',
+			techs: ['React', 'Redux', 'Ajax', 'Javascript', 'Node'],
+			liveSiteUrl: 'https://shop.mybluprint.com/a/shop/all-products',
+			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
+		},
+		{
 			title: 'Edit Watchlist',
 			imgPath: '../../images/edit-continue-watching.png',
 			copy: 'This feature gives users the ability to edit cards in their Watchlist, which contains in-progress episodes of Bluprint class playlists. This feature was part of a larger epic of improvements made to modules around the site that directly tie to the video watching experience. We also tracked clicks and deletions made by users. This data informs the business on which playlists our users chose to not continue watching, which leads to more informed descision making and content creation.',
 			techs: ['Handlebars', 'Less', 'Javascript', 'Brightspot', 'Java', 'Google Analytics'],
 			modalImages: ['../../images/editContinueWatchingModal/edit-continue-watching1.png', '../../images/edit-continue-watching.png', '../../images/editContinueWatchingModal/edit-continue-watching2.png'],
-			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
+			disclaimer: 'This project contains sensitive content and is not available for public viewing.'
 		},
 		{
 			title: 'Product Placement Module',
