@@ -4,11 +4,20 @@ import Card from '../card/Card.js'
 function CardGrid() {
 	const cards = [
 		{
-			title: 'Article Product Placements',
+			title: 'Edit Watchlist',
+			imgPath: '../../images/edit-continue-watching.png',
+			copy: 'This feature gives users the ability to edit cards in their Watchlist, which contains in-progress episodes of Bluprint class playlists. This feature was part of a larger epic of improvements made to modules around the site that directly tie to the video watching experience. We also tracked clicks and deletions made by users. This data informs the business on which playlists our users chose to not continue watching, which leads to more informed descision making and content creation.',
+			techs: ['Handlebars', 'Less', 'Javascript', 'Brightspot', 'Java', 'Google Analytics'],
+			modalImages: ['../../images/editContinueWatchingModal/edit-continue-watching1.png', '../../images/edit-continue-watching.png', '../../images/editContinueWatchingModal/edit-continue-watching2.png'],
+			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
+		},
+		{
+			title: 'Product Placement Module',
 			imgPath: '../../images/ecom_placements.png',
 			copy: <p>One of Bluprint's goals is to unite content and commerce. This project focused on introducing a CMS module that allows the Editorial and Merchandising teams to create product placements for the products sold on <a href="https://shop.mybluprint.com" target="_blank" rel="noopener noreferrer">shop.mybluprint.com</a> into articles created with our CMS tool. On the CMS side, product data is provided by the back end, and the article creator is able to input products themselves instead of just links. These product placements help improve ecommerce revenue numbers and bring together the two sides of Bluprint's product.</p>,
-			techs: ['Handlebars', 'Less', 'Javascript', 'Brightspot', 'Java'],
+			techs: ['Handlebars', 'Less', 'Javascript', 'Brightspot', 'Java', 'Google Analytics'],
 			liveSiteUrl: 'https://www.mybluprint.com/article/5-quilting-rulers-you-need-to-tackle-any-project',
+			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
 		},
 		{
 			title: 'Swapify',
