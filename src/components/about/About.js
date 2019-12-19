@@ -1,4 +1,5 @@
 import React from 'react';
+import * as firebase from 'firebase';
 
 const about = {
 	blurb: 'I’m a Lead Front End Engineer focusing in Javascript. My first passion is technical problem-solving, and my second passion is people. This intersection of interests has lead me to become a strong engineer and leader that strives to build connections between the people who build things, the business, the end user, and everything in between.',
@@ -22,6 +23,22 @@ const about = {
 	]
 }
 
+// const  firebaseConfig = {
+//     apiKey: "AIzaSyB0vEyoXbZE14X1thYIFhZspnj-RNkxcpM",
+//     authDomain: "portfolio-v3-971d8.firebaseapp.com",
+//     databaseURL: "https://portfolio-v3-971d8.firebaseio.com/",
+//     projectId: "portfolio-v3-971d8",
+//     storageBucket: "portfolio-v3-971d8.appspot.com",
+//     messagingSenderId: "359877008567",
+//     appId: "1:359877008567:web:dac7b66ef8951e72198132"
+// };
+ 
+// // Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
+
+// const about = firebase.app('portfolio-v3').database().ref('/about/');
+
+
 function renderSocialButtons(button) {
 	let buttonHtml;
 	if (button.name === 'email') {
@@ -37,6 +54,22 @@ function renderSocialButtons(button) {
 }
 
 function About() {
+	const aboutApiReference = firebase.app().database().ref('/about/');
+	let aboutData = [];
+	const data = aboutApiReference.once('value').then(data => function(snapshot) {
+		aboutData = snapshot.val();
+	}).resolve;
+	console.log(data)
+	// aboutApiReference.once('value').then(function(snapshot) {
+	// 	aboutData = snapshot.val();
+	// 	resolve
+	// });
+	// aboutApiReference.on('value', function(snapshot) {
+	//   aboutData = snapshot.val();
+	//   return aboutData;
+	// });
+	
+
 	return (
 		<div className="contentSection">
 			<h4 id="about" className="aboutHeader">About Me</h4>
@@ -53,6 +86,7 @@ function About() {
 			</div>
 		</div>    
 	);
+	
 }
 
 export default About;

@@ -4,17 +4,9 @@ import Card from '../card/Card.js'
 function CardGrid() {
 	const cards = [
 		{
-			title: 'Select Plan Flow',
-			imgPath: '../../images/select-plan.png',
-			copy: 'This feature gives users the ability to edit cards in their Watchlist, which contains in-progress episodes of Bluprint class playlists. This feature was part of a larger epic of improvements made to modules around the site that directly tie to the video watching experience. We also tracked clicks and deletions made by users. This data informs the business on which playlists our users chose to not continue watching, which leads to more informed descision making and content creation.',
-			techs: ['React', 'Redux', 'Sass', 'Recompose'],
-			modalImages: ['../../images/select-plan.png', '../../images/select-plan-modal/select-plan-paypal.png', '../../images/select-plan-modal/select-plan-paypal2.png', '../../images/select-plan-modal/select-plan-confirm.png'],
-			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
-		},
-		{
 			title: 'Combined Checkout Offers',
 			imgPath: '../../images/combined-checkout.png',
-			copy: 'This feature gives users the ability to edit cards in their Watchlist, which contains in-progress episodes of Bluprint class playlists. This feature was part of a larger epic of improvements made to modules around the site that directly tie to the video watching experience. We also tracked clicks and deletions made by users. This data informs the business on which playlists our users chose to not continue watching, which leads to more informed descision making and content creation.',
+			copy: 'Combined Checkout gives Bluprint ecommerce and TVOD buyers the chance to also buy a subscription to Bluprint\'s streaming service during their transaction. This feature creates the ability for a subscription offer to be included in the URL, and then the offer will be cookied and added to the user\'s cart. Combined Checkout is a powerful tool for Bluprint to acquire new subscribers, and presenting offers to users that are already purchasing products during times of high traffic is a crucial revenue driver to Bluprint\'s subscription business.',
 			techs: ['React', 'Redux', 'Javascript', 'Node'],
 			modalImages: ['../../images/combined-checkout-modal/combined-checkout1.png', '../../images/combined-checkout-modal/combined-checkout2.png', '../../images/combined-checkout.png'],
 			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
@@ -22,7 +14,7 @@ function CardGrid() {
 		{
 			title: 'Syndicated Navigation',
 			imgPath: '../../images/syndicated-nav.png',
-			copy: 'After introducing a CMS-driven front end solution in our technology ecosystem, we were faced with a problem – how to have two separate front ends with a single navigation bar. The solution we came up with was to scrape the navigation from the CMS stack and pull it in via AJAX to our React stack. The main benefit of this approach was that it allowed the navigation bar to be fully configureable via the CMS, and those changes carried over to the React stack. The integration allowed for stateful communication between the two apps.',
+			copy: 'After introducing a CMS-driven front end solution in our technology ecosystem, we were faced with a problem – how to have two technically separate front ends with a single navigation bar. The solution we came up with was to scrape the navigation built with CMS-driven code and pull it in via AJAX to pages built with our React stack. The main benefit of this approach is that it allows the navigation bar to be fully configureable via the CMS, and those changes will carry over to React-driven pages. The integration allowed for stateful communication between the two apps.',
 			techs: ['React', 'Redux', 'Ajax', 'Javascript', 'Node'],
 			liveSiteUrl: 'https://shop.mybluprint.com/a/shop/all-products',
 			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
@@ -30,7 +22,7 @@ function CardGrid() {
 		{
 			title: 'Edit Watchlist',
 			imgPath: '../../images/edit-continue-watching.png',
-			copy: 'This feature gives users the ability to edit cards in their Watchlist, which contains in-progress episodes of Bluprint class playlists. This feature was part of a larger epic of improvements made to modules around the site that directly tie to the video watching experience. We also tracked clicks and deletions made by users. This data informs the business on which playlists our users chose to not continue watching, which leads to more informed descision making and content creation.',
+			copy: 'Watchlist gives users the ability pick up where they left off in episodes of Bluprint classes, and this improvement allows users to edit the cards in the Watchlist grid. This feature was part of a larger epic of improvements made to modules around the site that directly tie to the video watching experience. We also track clicks and deletions made by users. This data informs the business on which classes our users choose to not continue watching, which leads to more informed descision making and content creation.',
 			techs: ['Handlebars', 'Less', 'Javascript', 'Brightspot', 'Java', 'Google Analytics'],
 			modalImages: ['../../images/editContinueWatchingModal/edit-continue-watching1.png', '../../images/edit-continue-watching.png', '../../images/editContinueWatchingModal/edit-continue-watching2.png'],
 			disclaimer: 'This project contains sensitive content and is not available for public viewing.'
@@ -38,9 +30,17 @@ function CardGrid() {
 		{
 			title: 'Product Placement Module',
 			imgPath: '../../images/ecom_placements.png',
-			copy: <p>One of Bluprint's goals is to unite content and commerce. This project focused on introducing a CMS module that allows the Editorial and Merchandising teams to create product placements for the products sold on <a href="https://shop.mybluprint.com" target="_blank" rel="noopener noreferrer">shop.mybluprint.com</a> into articles created with our CMS tool. On the CMS side, product data is provided by the back end, and the article creator is able to input products themselves instead of just links. These product placements help improve ecommerce revenue numbers and bring together the two sides of Bluprint's product.</p>,
+			copy: <p>One of Bluprint's goals is to unite content and commerce. This project focused on introducing a CMS module that allows the Editorial and Merchandising teams to insert product placements for the products sold on <a href="https://shop.mybluprint.com" target="_blank" rel="noopener noreferrer">shop.mybluprint.com</a> into pages created with our CMS tool. On the CMS side, product data is provided by the back end, and the page editor is able to input products themselves and populate data fields. These product placements help improve ecommerce revenue numbers and bring together the two sides of Bluprint's product.</p>,
 			techs: ['Handlebars', 'Less', 'Javascript', 'Brightspot', 'Java', 'Google Analytics'],
 			liveSiteUrl: 'https://www.mybluprint.com/article/5-quilting-rulers-you-need-to-tackle-any-project',
+			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
+		},
+		{
+			title: 'Select Plan Flow',
+			imgPath: '../../images/select-plan.png',
+			copy: 'The Select Plan page is the main avenue through which Bluprint users purchase their subscriptions, with either a monthly or annual plan. I worked on an overhaul of an early stage of this flow, in which we eliminated a page to reduce clicks, added styling to increase conversion, and added a configureable success screen that leads new subscribers to the next place in their Bluprint journey. This project was an important acquisition driver during the early stages of Bluprint\'s subscription product.',
+			techs: ['React', 'Redux', 'Sass', 'Recompose'],
+			modalImages: ['../../images/select-plan.png', '../../images/select-plan-modal/select-plan-paypal.png', '../../images/select-plan-modal/select-plan-paypal2.png', '../../images/select-plan-modal/select-plan-confirm.png'],
 			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
 		},
 		{
