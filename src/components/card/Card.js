@@ -11,6 +11,8 @@ function Card(props) {
 
 	    if (hasModalImages) {
 	    	cardLink = <SeeMoreModal card={card} />;
+	    } else if (!hasModalImages && !card.liveSiteUrl && !hasGithubUrl) {
+	    	cardLink = null
 	    } else if (!hasModalImages && !hasGithubUrl) {
 	    	cardLink = <a target="_blank" rel="noopener noreferrer" className="cardLink" href={card.liveSiteUrl}>Live site</a>;
 	    } else if (!hasModalImages && hasGithubUrl) {

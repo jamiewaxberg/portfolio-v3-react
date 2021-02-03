@@ -16,7 +16,6 @@ function CardGrid() {
 			imgPath: '../../images/syndicated-nav.png',
 			copy: 'After introducing a CMS-driven front end solution in our technology ecosystem, we were faced with a problem – how to have two technically separate front ends with a single navigation bar. The solution we came up with was to scrape the navigation built with CMS-driven code and pull it in via AJAX to pages built with our React stack. The main benefit of this approach is that it allows the navigation bar to be fully configureable via the CMS, and those changes will carry over to React-driven pages. The integration allowed for stateful communication between the two apps.',
 			techs: ['React', 'Redux', 'Ajax', 'Javascript', 'Node'],
-			liveSiteUrl: 'https://shop.mybluprint.com/a/shop/all-products',
 			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
 		},
 		{
@@ -32,7 +31,6 @@ function CardGrid() {
 			imgPath: '../../images/ecom_placements.png',
 			copy: <p>One of Bluprint's goals is to unite content and commerce. This project focused on introducing a CMS module that allows the Editorial and Merchandising teams to insert product placements for the products sold on <a href="https://shop.mybluprint.com" target="_blank" rel="noopener noreferrer">shop.mybluprint.com</a> into pages created with our CMS tool. On the CMS side, product data is provided by the back end, and the page editor is able to input products themselves and populate data fields. These product placements help improve ecommerce revenue numbers and bring together the two sides of Bluprint's product.</p>,
 			techs: ['Handlebars', 'Less', 'Javascript', 'Brightspot', 'Java', 'Google Analytics'],
-			liveSiteUrl: 'https://www.mybluprint.com/article/5-quilting-rulers-you-need-to-tackle-any-project',
 			disclaimer: 'The code for this project contains sensitive content and is not available for public viewing.'
 		},
 		{
